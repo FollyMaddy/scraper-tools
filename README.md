@@ -8,7 +8,7 @@ Added a scraper for msxcomputermagazine
 
 -etc
 
--!!!no-listings yet!!!
+-!!!no listings yet!!!
 
 Beware: it's a quick and dirty script.
 
