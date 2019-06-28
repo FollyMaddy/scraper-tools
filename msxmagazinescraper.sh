@@ -22,9 +22,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Make the program executable, dubbleclick and choose open in terminal.
-# Or run it from the terminal with : ./msxmagazinescraper.sh
-
 websitearchief=www.msxcomputermagazine.nl/archief
 maplist='
 bladen/ 
