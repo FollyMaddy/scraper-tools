@@ -1,10 +1,8 @@
 # scraper-tools
 
-Added a scraper for msxcomputermagazine
+Contains scrapers for msxcomputermagazine and Magpi-magazine
 
 # msxmagazinescraper.sh
-
-Version : 1.3
 
 How to run :
 
@@ -14,7 +12,7 @@ Or run it from the terminal with : ./msxmagazinescraper.sh
 
 Use : 
 
-Get the whole archive from www.msxcomputermagazine.nl/archief without a mouse-click.
+Get the whole archive from www.msxcomputermagazine.nl/archief 
 
 bladen/ (magazines)
 
@@ -35,3 +33,16 @@ lb/ (listing books)
 listings/ (listing files)
 
 beware : it is mainly dutch
+
+
+# Program : magpiscraper.sh
+
+Use : 
+
+Get the whole Magpi archive from https://www.raspberrypi.org
+
+How to run :
+
+Make the program executable, dubbleclick and choose open in terminal.
+
+Or run it from the terminal with : ./magpiscraper.sh
