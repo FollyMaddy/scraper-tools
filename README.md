@@ -46,3 +46,20 @@ How to run :
 Make the program executable, dubbleclick and choose open in terminal.
 
 Or run it from the terminal with : ./magpiscraper.sh
+
+
+# Program : 00_msxcas_webcindario_scraper.sh
+
+Use : 
+
+# Get all msx cas files from https://msxcas.webcindario.com/
+
+How to run :
+
+Make the program executable, dubbleclick and choose open in terminal.
+
+Or run it from the terminal with : ./00_msxcas_webcindario_scraper.sh
+
+Extra info about the name of the script :
+
+00 is added so script can be found after all files have been downloaded.
