@@ -1,6 +1,6 @@
 # scraper-tools
 
-Contains scrapers for msxcomputermagazine and Magpi-magazine
+Contains scrapers for msxcomputermagazine, Magpi-magazine and msxcas.webcindario
 
 # msxmagazinescraper.sh
 
