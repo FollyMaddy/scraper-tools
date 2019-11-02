@@ -52,7 +52,7 @@ Or run it from the terminal with : ./magpiscraper.sh
 
 Use : 
 
-# Get all msx cas files from https://msxcas.webcindario.com/
+Get all msx cas files from https://msxcas.webcindario.com/
 
 How to run :
 
