@@ -2,13 +2,19 @@
 # Program : archive.sh
 # Version : 1.3a
 # Use : 
-# Get maps of https://www.archive.org
+# Educational script on how we can get files from https://www.archive.org
+#
 # How to run :
 # Make the program executable, dubbleclick and choose open in terminal.
 # Or run it from the terminal with : ./archive.sh
 # Author : Folkert van der Meulen
 # Date   : 03/02/2020
 #
+# Additional info :
+# Script is not working OOB !
+# This script is created for educational purposes
+# We dissaprove illegal usage
+
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
