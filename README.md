@@ -68,7 +68,7 @@ Extra info about the name of the script :
 
 Use : 
 
-Get your desired directory's from --the archive-- !
+Educational script on how we can get files from --the archive-- !
 
 How to run :
 
