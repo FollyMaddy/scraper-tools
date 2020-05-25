@@ -78,5 +78,20 @@ Or run it from the terminal with : ./archive.sh
 
 Extra info :
 
-Edit my crypted script for your use.
+Read the script
 
+# Program : edgeemu.sh
+
+Use : 
+
+Educational script on how we can get files from edgeemu !
+
+How to run :
+
+Make the program executable, dubbleclick and choose open in terminal.
+
+Or run it from the terminal with : ./edgeemu.sh
+
+Extra info :
+
+Read the script
