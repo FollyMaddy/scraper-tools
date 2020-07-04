@@ -80,6 +80,26 @@ Extra info :
 
 Read the script
 
+This is the basic version ! kept here for backup !
+
+# Program : archive-v3.sh
+
+Use : 
+
+Educational script on how we can get files from --the archive-- !
+
+How to run :
+
+Make the program executable, dubbleclick and choose open in terminal.
+
+Or run it from the terminal with : ./archive.sh
+
+Extra info :
+
+Improved check speed for files already downloaded
+
+Makes an 00index file that is checked at restart
+
 # Program : edgeemu.sh
 
 Use : 
