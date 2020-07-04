@@ -80,7 +80,9 @@ Extra info :
 
 Read the script
 
-This is the basic version ! kept here for backup !
+This is the basic version ! kept in here for backup !
+
+Advice : use archive-v3.sh (the improved version)
 
 # Program : archive-v3.sh
 
