@@ -18,9 +18,9 @@ or
 
 Make the program executable :
 
-Dubbleclick and choose open in terminal,
+- Dubbleclick and choose open in terminal
 
-or run it from the terminal with : ./msxmagazinescraper.sh
+- Or run it from the terminal with : ./msxmagazinescraper.sh
 
 Use : 
 
@@ -61,9 +61,9 @@ Or
 
 Make the program executable :
 
-Dubbleclick and choose open in terminal,
+- Dubbleclick and choose open in terminal
 
-or run it from the terminal with : ./magpiscraper.sh
+- Or run it from the terminal with : ./magpiscraper.sh
 
 Extra info :
 
@@ -90,9 +90,9 @@ Or
 
 Make the program executable :
 
-Dubbleclick and choose open in terminal,
+- Dubbleclick and choose open in terminal
 
-or run it from the terminal with : ./00_msxcas_webcindario_scraper.sh
+- Or run it from the terminal with : ./00_msxcas_webcindario_scraper.sh
 
 Extra info about the name of the script :
 
@@ -118,9 +118,9 @@ Or
 
 Make the program executable :
 
-Dubbleclick and choose open in terminal,
+- Dubbleclick and choose open in terminal
 
-or run it from the terminal with : ./archive.sh
+- Or run it from the terminal with : ./archive.sh
 
 Extra info :
 
@@ -149,9 +149,9 @@ Or
 
 Make the program executable :
 
-Dubbleclick and choose open in terminal,
+- Dubbleclick and choose open in terminal
 
-or run it from the terminal with : ./edgeemu.sh
+- Or run it from the terminal with : ./edgeemu.sh
 
 Extra info :
 
