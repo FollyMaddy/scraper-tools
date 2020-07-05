@@ -12,9 +12,15 @@ Contains scrapers for :
 
 How to run :
 
-Make the program executable, dubbleclick and choose open in terminal.
+Run it from the terminal with : bash msxmagazinescraper.sh
 
-Or run it from the terminal with : ./msxmagazinescraper.sh
+or
+
+Make the program executable :
+
+Dubbleclick and choose open in terminal,
+
+or run it from the terminal with : ./msxmagazinescraper.sh
 
 Use : 
 
@@ -49,9 +55,15 @@ Get the whole Magpi archive from https://www.raspberrypi.org
 
 How to run :
 
-Make the program executable, dubbleclick and choose open in terminal.
+Run it from the terminal with : bash magpiscraper.sh
 
-Or run it from the terminal with : ./magpiscraper.sh
+Or
+
+Make the program executable :
+
+Dubbleclick and choose open in terminal,
+
+or run it from the terminal with : ./magpiscraper.sh
 
 Extra info :
 
@@ -72,9 +84,15 @@ Get all msx cas files from https://msxcas.webcindario.com/
 
 How to run :
 
-Make the program executable, dubbleclick and choose open in terminal.
+Run it from the terminal with : bash 00_msxcas_webcindario_scraper.sh
 
-Or run it from the terminal with : ./00_msxcas_webcindario_scraper.sh
+Or
+
+Make the program executable :
+
+Dubbleclick and choose open in terminal,
+
+or run it from the terminal with : ./00_msxcas_webcindario_scraper.sh
 
 Extra info about the name of the script :
 
@@ -94,9 +112,15 @@ The best functional and educational script on how we can get files from --the ar
 
 How to run :
 
-Make the program executable, dubbleclick and choose open in terminal.
+Run it from the terminal with : bash archive.sh
 
-Or run it from the terminal with : ./archive.sh
+Or
+
+Make the program executable :
+
+Dubbleclick and choose open in terminal,
+
+or run it from the terminal with : ./archive.sh
 
 Extra info :
 
@@ -119,9 +143,15 @@ Educational script on how we can get files from edgeemu !
 
 How to run :
 
-Make the program executable, dubbleclick and choose open in terminal.
+Run it from the terminal with : bash edgeemu.sh
 
-Or run it from the terminal with : ./edgeemu.sh
+Or
+
+Make the program executable :
+
+Dubbleclick and choose open in terminal,
+
+or run it from the terminal with : ./edgeemu.sh
 
 Extra info :
 
