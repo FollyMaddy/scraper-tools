@@ -90,9 +90,15 @@ Or run it from the terminal with : ./archive.sh
 
 Extra info :
 
-Improved check speed for files already processed
+RetroPie map structure added
 
-Makes an 00index file that is checked at restart
+Improved check speed for files already processed (00index file that is checked at restart)
+
+Continues with partly processed files
+
+Can be stopped/restated at any time
+
+-Read the script for more info-
 
 
 # Program : edgeemu.sh
