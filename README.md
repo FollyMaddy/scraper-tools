@@ -2,7 +2,7 @@
 
 Contains scrapers for :
 - msxcomputermagazine 
-- Magpi-magazine (beware : magpi has changed stuff!)
+- Magpi-magazine
 - msxcas.webcindario
 - archive
 - edgeemu
@@ -52,6 +52,12 @@ How to run :
 Make the program executable, dubbleclick and choose open in terminal.
 
 Or run it from the terminal with : ./magpiscraper.sh
+
+Extra info :
+
+Tested on 5-7-20 : magpi has changed stuff !
+
+Still works with magpi-issues until 86 and old beginners/code/project books)
 
 
 # Program : 00_msxcas_webcindario_scraper.sh
