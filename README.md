@@ -64,11 +64,31 @@ Extra info about the name of the script :
 
 00 is added so script can be found after all files have been downloaded.
 
+
+# Program : archive-v1.sh, archive-v2.sh and archive-v3.sh
+
+Use : 
+
+Educational scripts on how we can get files from --the archive-- !
+
+These are backup files ! (latest version is archive.sh)
+
+How to run :
+
+Make the desired program executable, dubbleclick and choose open in terminal.
+
+Or run it from the terminal with : ./archive-v1.sh (v2 or v3)
+
+Extra info :
+
+Read the scripts
+
+
 # Program : archive.sh
 
 Use : 
 
-Educational script on how we can get files from --the archive-- !
+The best functional and educational script on how we can get files from --the archive-- !
 
 How to run :
 
@@ -78,27 +98,7 @@ Or run it from the terminal with : ./archive.sh
 
 Extra info :
 
-Read the script
-
-This is the basic version ! kept in here for backup !
-
-Advice : use archive-v3.sh (the improved version)
-
-# Program : archive-v3.sh
-
-Use : 
-
-Educational script on how we can get files from --the archive-- !
-
-How to run :
-
-Make the program executable, dubbleclick and choose open in terminal.
-
-Or run it from the terminal with : ./archive.sh
-
-Extra info :
-
-Improved check speed for files already downloaded
+Improved check speed for files already processed
 
 Makes an 00index file that is checked at restart
 
