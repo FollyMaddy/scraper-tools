@@ -55,9 +55,13 @@ Or run it from the terminal with : ./magpiscraper.sh
 
 Extra info :
 
-Tested on 5-7-20 : magpi has changed stuff !
+Tested on 5-7-20 : MagPi has changed stuff !
 
-Still works with magpi-issues until 86 and old beginners/code/project books)
+Old MagPi location still works with magpi-issues until 86 and old beginners/code/project books
+
+New MagPi location is added
+
+wget (with continue option) is used now for getting the files from the old and the new location
 
 
 # Program : 00_msxcas_webcindario_scraper.sh
