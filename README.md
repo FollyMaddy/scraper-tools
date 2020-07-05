@@ -65,23 +65,9 @@ Extra info about the name of the script :
 00 is added so script can be found after all files have been downloaded.
 
 
-# Program : archive-v1.sh, archive-v2.sh and archive-v3.sh
+# Programs : archive-v1.sh, archive-v2.sh and archive-v3.sh
 
-Use : 
-
-Educational scripts on how we can get files from --the archive-- !
-
-These are backup files ! (latest version is archive.sh)
-
-How to run :
-
-Make the desired program executable, dubbleclick and choose open in terminal.
-
-Or run it from the terminal with : ./archive-v1.sh (v2 or v3)
-
-Extra info :
-
-Read the scripts
+Backups ! use archive.sh
 
 
 # Program : archive.sh
@@ -101,6 +87,7 @@ Extra info :
 Improved check speed for files already processed
 
 Makes an 00index file that is checked at restart
+
 
 # Program : edgeemu.sh
 
