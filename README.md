@@ -6,6 +6,7 @@ Contains scrapers for :
 - msxcas.webcindario
 - archive
 - edgeemu
+- vintagecomputers Philips P2000 documents
 
 
 # msxmagazinescraper.sh
