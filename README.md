@@ -156,3 +156,27 @@ Make the program executable :
 Extra info :
 
 Read the script
+
+
+# Program : 00_Philips_P2000_documents.sh
+
+Use : 
+
+Get some Philips P2000C / P2000T / P2000M computer documentation.
+
+These are hard to come by.
+
+Seems not all P2000T / P2000M documents are there.
+
+How to run :
+
+Run it from the terminal with : bash 00_Philips_P2000_documents.sh
+
+Or
+
+Make the program executable :
+
+- Dubbleclick and choose open in terminal
+
+- Or run it from the terminal with : ./00_Philips_P2000_documents.sh
+
