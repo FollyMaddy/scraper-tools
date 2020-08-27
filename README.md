@@ -68,13 +68,15 @@ Make the program executable :
 
 Extra info :
 
-Tested on 5-7-20 : MagPi has changed stuff !
+Tested on 5-7-2020 : MagPi has changed stuff !
 
 Old MagPi location still works with magpi-issues until 86 and old beginners/code/project books
 
 New MagPi location is added
 
-wget (with continue option) is used now for getting the files from the old and the new location
+wget is used now for getting the files from the old and the new location
+
+Continue option is used so files, that already exist, are not downloaded again
 
 
 # Program : msxcas_webcindario_scraper.sh
