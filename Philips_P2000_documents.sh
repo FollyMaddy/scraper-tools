@@ -22,15 +22,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-curl http://www.vintagecomputer.net/fjkraan/comp/p2000c/doc/ | grep -o -P '(?<=href=").*(?=">)' | while read LINE
-
-do
-  # do stuff if conains
-  if [[ "$LINE" == *.jpg ]] || [[ "$LINE" == *.pdf ]]
-  then
-  echo $LINE
-  curl -g -O http://www.vintagecomputer.net/fjkraan/comp/p2000c/doc/$LINE
-  #wget -c http://www.vintagecomputer.net/fjkraan/comp/p2000c/doc/$LINE
-  fi 
-done
+#get desired files (pdf,zip) with continue (-c) recursive (-r) with recursive-depth (1 directory deep) (-l 1) and manually create a directory (-P) and do not automatically create directory's (-nd).
+wget -c -r -l 1 https://www.retrocomputing.nl/p2000-basic-cartridge -P www.retrocomputing.nl/p2000-basic-cartridge -A pdf,zip -nd
+wget -c -r -l 1 https://www.retrocomputing.nl/p2000-documentation -P www.retrocomputing.nl/p2000-documentation -A pdf,zip -nd
+wget -c -r -l 1 http://www.vintagecomputer.net/fjkraan/comp/p2000c/doc -P www.vintagecomputer.net/p2000c -A pdf,jpg,txt -nd
 
