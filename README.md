@@ -77,7 +77,7 @@ New MagPi location is added
 wget (with continue option) is used now for getting the files from the old and the new location
 
 
-# Program : 00_msxcas_webcindario_scraper.sh
+# Program : msxcas_webcindario_scraper.sh
 
 Use : 
 
@@ -85,7 +85,7 @@ Get all msx cas files from https://msxcas.webcindario.com/
 
 How to run :
 
-Run it from the terminal with : bash 00_msxcas_webcindario_scraper.sh
+Run it from the terminal with : bash msxcas_webcindario_scraper.sh
 
 Or
 
@@ -93,11 +93,11 @@ Make the program executable :
 
 - Dubbleclick and choose open in terminal
 
-- Or run it from the terminal with : ./00_msxcas_webcindario_scraper.sh
+- Or run it from the terminal with : ./msxcas_webcindario_scraper.sh
 
-Extra info about the name of the script :
+Extra info :
 
-00 is added so script can be found after all files have been downloaded.
+RetroPie map structure added in Version 2
 
 
 # Programs : archive-v1.sh, archive-v2.sh and archive-v3.sh
