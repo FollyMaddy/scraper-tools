@@ -44,5 +44,5 @@
 
 #new command, now just 1 line !
 #get desired files (zip) with continue (-c) recursive (-r) with recursive-depth (1 directory deep) (-l 1) and manually create a directory (-P) and do not automatically create directory's (-nd).
-wget -c -r -l 1 https://msxcas.webcindario.com/index.html -P $HOME/RetroPie/roms/msx/msxcas.webcindario.com/cas -A zip -nd
+wget -c -r -l 1 https://msxcas.webcindario.com/index.html -P roms/msx/msxcas.webcindario.com/cas -A zip -nd
 
