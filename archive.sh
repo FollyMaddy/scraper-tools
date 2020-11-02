@@ -12,7 +12,7 @@
 # Make the program executable, dubbleclick and choose open in terminal.
 # Or run it from the terminal with : ./archive.sh
 # Author : Folkert van der Meulen
-# Date   : 04/07/2020
+# Date   : 02/11/2020
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -33,7 +33,11 @@ websitemap=download
 startworkdir=$(pwd)
 
 #make your own or choose one of these (--crypted) examples
+
 #(these use standard map structures)
+
+#maplist='--retropiebiosfilesconfiguredforeverysystem_20190904'; RP_map_structure=BIOS #(most systems are in the pack) unpack and move them to the right place
+
 #maplist='--tosecdcus20190822'; RP_map_structure=roms/dreamcast
 #maplist='--GamecubeCollectionByGhostware--'; RP_map_structure=roms/gc; #(x86 only)
 #maplist='--redumpPhilipsCdi'; RP_map_structure=roms/cdimono1; #(this should be the future mapstructure if console is added)
@@ -43,13 +47,14 @@ startworkdir=$(pwd)
 #maplist='--MSX_MSX_TOSEC_2012_04_23'; RP_map_structure=roms/msx # just one file of 160M
 #maplist='--tosec-20161111-commodore-c64'; RP_map_structure=roms/c64 # just one file of 18G
 #maplist='--redump.ss'; RP_map_structure=roms/saturn
-#maplist='--3ds-cia-eshop'; RP_map_structure=roms/3ds; #(this should be the future mapstructure if console is added)
-#maplist='--1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/'; RP_map_structure=roms/3ds; #(this should be the future mapstructure if console is added)
-#maplist='--3DSCIA_testitem1'; RP_map_structure=roms/3ds; #(this should be the future mapstructure if console is added)
-
-#(these use non standard map stucture ! if you use standard map stucture, then see over there)
-#maplist='--redumpPhilipsCdi'; RP_map_structure=roms/arcadia/Philips_CD-I/cdimono1; 
-#maplist='--PhilipsCD-i-Preproduction-Non-RedumpSet'; RP_map_structure=roms/arcadia/Philips_CD-I/cdimono1; #(using my own map structure for now)
+#maplist='--3ds-cia-eshop'; RP_map_structure=roms/3ds;
+#maplist='--1PokemonUltraSunEURMULTi83DSPUSSYCAT/More%203ds%20games/'; RP_map_structure=roms/3ds;
+#maplist='--3DSCIA_testitem1'; RP_map_structure=roms/3ds;
+#maplist='--SharpX68000RomCollectionByGhostware'; RP_map_structure=roms/x68000;
+#maplist='--Neo_Kobe_Sharp_X1_2016-02-25'; RP_map_structure=roms/x1; #just one file
+#maplist='--Sharp_X1_TOSEC_2012_04_23'; RP_map_structure=roms/x1; #just one file
+#maplist='--redumpPhilipsCdi'; RP_map_structure=roms/cdimono1; 
+#maplist='--PhilipsCD-i-Preproduction-Non-RedumpSet'; RP_map_structure=roms/cdimono1;
 
 # add in future : compilation of many consoles download/TOSEC_V2017-04-23
 
