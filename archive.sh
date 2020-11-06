@@ -54,8 +54,6 @@ startworkdir=$(pwd)
 #maplist='--SharpX68000RomCollectionByGhostware'; RP_map_structure=roms/x68000;
 #maplist='--Neo_Kobe_Sharp_X1_2016-02-25'; RP_map_structure=roms/x1; #just one file
 #maplist='--Sharp_X1_TOSEC_2012_04_23'; RP_map_structure=roms/x1; #just one file
-#maplist='--redumpPhilipsCdi'; RP_map_structure=roms/cdimono1; 
-#maplist='--PhilipsCD-i-Preproduction-Non-RedumpSet'; RP_map_structure=roms/cdimono1;
 #maplist='--pc88-rom1900-300docs'; RP_map_structure=roms/pc88; # just one file of 640M # japanese filenames, creates some strange directory's and filenames
 #maplist='--Neo_Kobe_NEC_PC-8801_2016-02-25'; RP_map_structure=roms/pc88; # just one file of 2.6G # bios files also included
 #maplist='--NeoKobe-NecPc-98012017-11-17'; RP_map_structure=roms/pc98; 
