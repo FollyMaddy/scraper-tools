@@ -12,7 +12,7 @@
 # Make the program executable, dubbleclick and choose open in terminal.
 # Or run it from the terminal with : ./archive.sh
 # Author : Folkert van der Meulen
-# Date   : 02/11/2020
+# Date   : 06/11/2020
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -37,6 +37,7 @@ startworkdir=$(pwd)
 #(these use standard map structures)
 
 #maplist='--retropiebiosfilesconfiguredforeverysystem_20190904'; RP_map_structure=BIOS #(most systems are in the pack) unpack and move them to the right place
+#maplist='--MESS-0.151.BIOS.ROMs'; RP_map_structure=BIOS # unpack and move them to the right place
 
 #maplist='--tosecdcus20190822'; RP_map_structure=roms/dreamcast
 #maplist='--GamecubeCollectionByGhostware--'; RP_map_structure=roms/gc; #(x86 only)
@@ -55,6 +56,12 @@ startworkdir=$(pwd)
 #maplist='--Sharp_X1_TOSEC_2012_04_23'; RP_map_structure=roms/x1; #just one file
 #maplist='--redumpPhilipsCdi'; RP_map_structure=roms/cdimono1; 
 #maplist='--PhilipsCD-i-Preproduction-Non-RedumpSet'; RP_map_structure=roms/cdimono1;
+#maplist='--pc88-rom1900-300docs'; RP_map_structure=roms/pc88; # just one file of 640M # japanese filenames, creates some strange directory's and filenames
+#maplist='--Neo_Kobe_NEC_PC-8801_2016-02-25'; RP_map_structure=roms/pc88; # just one file of 2.6G # bios files also included
+#maplist='--NeoKobe-NecPc-98012017-11-17'; RP_map_structure=roms/pc98; 
+#maplist='--PC98_Games_1813'; RP_map_structure=roms/pc98; 
+
+
 
 # add in future : compilation of many consoles download/TOSEC_V2017-04-23
 
@@ -63,13 +70,11 @@ echo "create directory\'s $startworkdir/$RP_map_structure/$website/$maplist"
 mkdir -p "$startworkdir/$RP_map_structure/$website/$maplist"
 cd "$startworkdir/$RP_map_structure/$website/$maplist"
 
-mkdir -p "$startworkdir/$RP_map_structure/$website/$maplist/00wgetlogs"
-
 curl -g -s -o "-" "https://$website/$websitemap/$maplist/" | while read LINE
 
 do
 case "$LINE" in
-  *cia* |*rar/* |*zip* | *iso*)
+  *cia* |*rar/* |*zip* | *iso* | *lzh*)
   MAPORFILE=$(echo $LINE| cut -d'"' -f 2)
   # do stuff if not conains a / (you can add more options by add this to line (ignore \ also) -->) && [[ "$MAPORFILE" != *\\* ]]
   #if [[ "$MAPORFILE" != \/ ]] && [[ "$MAPORFILE" != \?* ]]
@@ -96,6 +101,8 @@ case "$LINE" in
     then 
     touch $startworkdir/$RP_map_structure/$website/$maplist/00index
     echo $MAPORFILE >> $startworkdir/$RP_map_structure/$website/$maplist/00index
+    #Issue : This if is used for echoing new progress line over old ones and don't echo empty lines,but it does not alway's work as it should.
+    #(program works though)
     if [[ $line == *"100%"* ]]
       then
       echo -ne '                                                                                                                        \r'
