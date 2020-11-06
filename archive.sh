@@ -59,7 +59,7 @@ startworkdir=$(pwd)
 #maplist='--pc88-rom1900-300docs'; RP_map_structure=roms/pc88; # just one file of 640M # japanese filenames, creates some strange directory's and filenames
 #maplist='--Neo_Kobe_NEC_PC-8801_2016-02-25'; RP_map_structure=roms/pc88; # just one file of 2.6G # bios files also included
 #maplist='--NeoKobe-NecPc-98012017-11-17'; RP_map_structure=roms/pc98; 
-#maplist='--PC98_Games_1813'; RP_map_structure=roms/pc98; 
+#maplist='--PC98_Games_1813'; RP_map_structure=roms/pc98; # 2 files of about 7G, both files seem to have the same content, rar will not unpack on PI
 
 
 
