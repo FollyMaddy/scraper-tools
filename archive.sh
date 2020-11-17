@@ -76,7 +76,7 @@ curl -g -s -o "-" "https://$website/$websitemap/$maplist/" | while read LINE
 
 do
 case "$LINE" in
-  *cia* |*rar/* |*zip* |*z01* |*z02* |*z03* |*z04* |*z05* |*z06* |*z07* |*z08* |*z09* |*z10* |*z11* |*z12* |*z13* |*z14* |*z15* |*z16* |*z17* |*z18* |*z19* |*z20* |*z21* |*z22* | *iso* | *lzh*)
+  *cia*|*rar/*|*zip*|*z[0-9][0-9]*|*iso*|*lzh*)
   MAPORFILE=$(echo $LINE| cut -d'"' -f 2)
   # do stuff if not conains a / (you can add more options by add this to line (ignore \ also) -->) && [[ "$MAPORFILE" != *\\* ]]
   #if [[ "$MAPORFILE" != \/ ]] && [[ "$MAPORFILE" != \?* ]]
