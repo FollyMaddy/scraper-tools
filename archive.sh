@@ -5,8 +5,10 @@
 # Get stuff of https://www.archive.org
 # Script is not working OOB !
 # Find out for your self how this script works, uncomment the desired #-># lines and alter to your needs !
-# Additional info :
-# This script is created for educational purposes
+# Additional info : 
+# This script is created for educational/testing purposes
+# The archive site has a special DMCA exemption for the US
+# For more info, you can read this : https://www.copyright.gov/legislation/dmca.pdf
 # We dissaprove illegal usage
 # How to run :
 # Make the program executable, dubbleclick and choose open in terminal.
@@ -58,10 +60,12 @@ startworkdir=$(pwd)
 #maplist='--Neo_Kobe_NEC_PC-8801_2016-02-25'; RP_map_structure=roms/pc88; # just one file of 2.6G # bios files also included
 #maplist='--NeoKobe-NecPc-98012017-11-17'; RP_map_structure=roms/pc98; 
 #maplist='--PC98_Games_1813'; RP_map_structure=roms/pc98; # 2 files of about 7G, both files seem to have the same content, rar will not unpack on PI
+#maplist='--Neo_Kobe_Fujitsu_FM_Towns_2016-02-25'; RP_map_structure=roms/fmtowns; # about 30 files of about 4G
 
 
 
 # add in future : compilation of many consoles download/TOSEC_V2017-04-23
+# add in future : compilation of many consoles download/TOSEC_Main_Branch_Release_2018-12-27
 
 
 echo "create directory\'s $startworkdir/$RP_map_structure/$website/$maplist"
@@ -72,7 +76,7 @@ curl -g -s -o "-" "https://$website/$websitemap/$maplist/" | while read LINE
 
 do
 case "$LINE" in
-  *cia* |*rar/* |*zip* | *iso* | *lzh*)
+  *cia* |*rar/* |*zip* |*z01* |*z02* |*z03* |*z04* |*z05* |*z06* |*z07* |*z08* |*z09* |*z10* |*z11* |*z12* |*z13* |*z14* |*z15* |*z16* |*z17* |*z18* |*z19* |*z20* |*z21* |*z22* | *iso* | *lzh*)
   MAPORFILE=$(echo $LINE| cut -d'"' -f 2)
   # do stuff if not conains a / (you can add more options by add this to line (ignore \ also) -->) && [[ "$MAPORFILE" != *\\* ]]
   #if [[ "$MAPORFILE" != \/ ]] && [[ "$MAPORFILE" != \?* ]]
