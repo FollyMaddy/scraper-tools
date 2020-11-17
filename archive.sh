@@ -60,7 +60,7 @@ startworkdir=$(pwd)
 #maplist='--Neo_Kobe_NEC_PC-8801_2016-02-25'; RP_map_structure=roms/pc88; # just one file of 2.6G # bios files also included
 #maplist='--NeoKobe-NecPc-98012017-11-17'; RP_map_structure=roms/pc98; 
 #maplist='--PC98_Games_1813'; RP_map_structure=roms/pc98; # 2 files of about 7G, both files seem to have the same content, rar will not unpack on PI
-#maplist='--Neo_Kobe_Fujitsu_FM_Towns_2016-02-25'; RP_map_structure=roms/fmtowns; # about 30 files of about 4G
+#maplist='--Neo_Kobe_Fujitsu_FM_Towns_2016-02-25'; RP_map_structure=roms/fmtowns; # 22 files of about 4G
 
 
 
