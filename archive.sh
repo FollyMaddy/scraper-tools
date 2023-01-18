@@ -45,7 +45,10 @@ startworkdir=$(pwd)
 #maplist='--GamecubeCollectionByGhostware--'; RP_map_structure=roms/gc; #(x86 only)
 #maplist='--redumpPhilipsCdi'; RP_map_structure=roms/cdimono1; #(this should be the future mapstructure if console is added)
 #maplist='--PhilipsCD-i-Preproduction-Non-RedumpSet'; RP_map_structure=roms/cdimono1; #(this should be the future mapstructure if console is added)
-#maplist='--Amiga_CDTV_TOSEC_2009_04_18'; RP_map_structure=roms/amiga/CDTV # just one file of 22G and continue seems not to work
+#maplist='--commodore-amiga-demos-various-adf'; RP_map_structure=roms/amiga/demos # total of 1,8G
+#maplist='--Amiga_CDTV_TOSEC_2009_04_18'; RP_map_structure=roms/amiga/CDTV # just one file of 22G and continue seems not to work / iso files don't work with amiberry
+#maplist='--RedumpCommodoreAmigaCDTV'; RP_map_structure=roms/amiga/CDTV #
+#maplist='--PhilipsCD-i-Preproduction-Non-RedumpSet'; RP_map_structure=roms/cdimono1; #(this should be the future mapstructure if console is added)
 #maplist='--RedumpAmigaCD32'; RP_map_structure=roms/amiga/CD32
 #maplist='--MSX_MSX_TOSEC_2012_04_23'; RP_map_structure=roms/msx # just one file of 160M
 #maplist='--tosec-20161111-commodore-c64'; RP_map_structure=roms/c64 # just one file of 18G
@@ -89,7 +92,7 @@ case "$LINE" in
 
   #check the file 00index for files that are already downloaded
   if [[ "$index" != *"$MAPORFILE"* ]];then
-  echo Download : $MAPORFILE | sed "s/%20/ /g;s/%21/!/g;s/%23/#/g;s/%24/$/g;s/%26/\&/g;s/%27/'/g;s/%28/(/g;s/%29/)/g"
+  echo Download : $MAPORFILE | sed "s/%20/ /g;s/%21/!/g;s/%23/#/g;s/%24/$/g;s/%26/\&/g;s/%27/'/g;s/%28/(/g;s/%29/)/g;s/%2C/,/g"
   #"2>&1 | tee" is added to redirect sterr and stout and tee makes and shows this text file. This is how can check if something is already done.
   #however tee does not seem to refresh the progressbar on 1 line
   #sed did not work for me ! :<=that's why we do a sed command between before tee command, replace text ".s\n" in ".s\r" to show the progressbar again on 1 line like wget normally does.
@@ -107,24 +110,18 @@ case "$LINE" in
     #(program works though)
     if [[ $line == *"100%"* ]]
       then
-      echo -ne '                                                                                                                        \r'
-      echo -ne $line '\r'
-      else
-      echo $line
+      printf '\n'$line
       fi
     else 
-      if [[ $line == *".........."* ]]
+      if [[ $line == *"000K"* ]]
       then
-      echo -ne '                                                                                                                        \r'
-      echo -ne $line '\r'
-      else
-      echo $line
+        printf º
       fi
     fi
   done
   echo
   else
-  echo Already downloaded : $MAPORFILE | sed "s/%20/ /g;s/%21/!/g;s/%23/#/g;s/%24/$/g;s/%26/\&/g;s/%27/'/g;s/%28/(/g;s/%29/)/g"
+  echo Already downloaded : $MAPORFILE | sed "s/%20/ /g;s/%21/!/g;s/%23/#/g;s/%24/$/g;s/%26/\&/g;s/%27/'/g;s/%28/(/g;s/%29/)/g;s/%2C/,/g"
   echo
   fi
 
