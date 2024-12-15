@@ -1,18 +1,17 @@
 #!/bin/bash
 # Program : YTdl.sh
-# Version : 1.2
+# Version : 1.3
 # Use : 
 # Script is not working OOB !
-# Find out for your self how this script works, uncomment the #-># lines and alter to your needs !
+# Find out for your self how this script works and get the program used by this script !
 # Part of the script purpose, is to get usefull filenames
 # Additional info :
-# This script is created for educational purposes
+# This script is created for educational purposes only
 # We dissaprove illegal usage
 # How to run :
 # Make the program executable, dubbleclick and choose open in terminal.
 # Or run it from the terminal with : ./YTdl.sh
-# Author : Folkert van der Meulen
-# Date   : 11/06/2019
+# Date   : 15/12/2024
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -59,22 +58,18 @@ do
     else
         echo playlistmode = $playlistmode
         # for placing files in a separate directory from within the script directory >> 
-        #######uncomment and alter next line to your needs#######
-        #->#/usr/local/bin/y__t___-dl -f 140 $playlistmode -c -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" $webadres
+        /usr/bin/yt-dlp -f 140 $playlistmode -c -o "%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" $webadres
         
         # command output to string examples see >> https://stackoverflow.com/questions/6316822/put-command-output-into-string      
         # use pwd for directory you are in. see >>https://www.ostricher.com/2014/10/the-right-way-to-get-the-directory-of-a-bash-script/
-        #######uncomment next line#######
-        #->#privateworkdir=$(pwd)
+        privateworkdir=$(pwd)
         # ls list examples see >> https://stackoverflow.com/questions/15691359/how-can-i-list-ls-the-5-last-modified-files-in-a-directory
-        #######uncomment next line#######
-        #->#uselatestmap=$(ls -1t | head -1)
+        uselatestmap=$(ls -1t | head -1)
 
         # write webadres to file. If file already exists, append webadres. (usefull in no-playlist directory file)
         # use ">" for one line (if file exists it will overwrite).
         # use ">>" to append more lines (if file exists it will add/append information).
-        #######uncomment next line#######
-        #->#echo $webadres >> "$privateworkdir/$uselatestmap/00 - $uselatestmap"
+        echo $webadres >> "$privateworkdir/$uselatestmap/00 - $uselatestmap"
     fi
 done
 
